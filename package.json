@@ -1,0 +1,32 @@
+{
+  "name": "founder-brief",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "postinstall": "prisma generate",
+    "db:push": "prisma db push",
+    "ingest": "tsx scripts/ingest.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "5.16.2",
+    "cheerio": "1.0.0",
+    "date-fns": "3.6.0",
+    "next": "14.2.5",
+    "p-limit": "5.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "rss-parser": "3.13.0",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.19",
+    "postcss": "8.4.39",
+    "prisma": "5.16.2",
+    "tailwindcss": "3.4.7",
+    "tsx": "4.16.2",
+    "typescript": "5.5.4"
+  }
+}

@@ -1,0 +1,22 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b0f14;
+  --card: #0f1720;
+  --muted: #8aa0b4;
+}
+
+html, body { height: 100%; }
+body {
+  background: radial-gradient(1200px 800px at 20% -10%, #0f1a26, #0b0f14 60%);
+  color: #e8f0f8;
+}
+a { color: #9dd6ff; }
+.container { max-width: 880px; margin: 0 auto; padding: 24px; }
+.card { background: var(--card); border: 1px solid #1f2d3a; border-radius: 12px; padding: 16px; }
+.section-title { @apply text-xl font-semibold mb-3; }
+.item + .item { border-top: 1px solid #1d2a38; margin-top: 8px; padding-top: 8px; }
+.badge { background:#102435; border:1px solid #1e3b55; border-radius:6px; padding:2px 8px; font-size:12px; color:#b9d3eb;}

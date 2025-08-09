@@ -1,0 +1,21 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Article {
+  id            String   @id
+  title         String
+  url           String   @unique
+  source        String
+  publishedAt   DateTime?
+  createdAt     DateTime @default(now())
+  summary       String?
+  category      String   // "interview" | "breakthrough"
+  score         Float    @default(0)
+}
